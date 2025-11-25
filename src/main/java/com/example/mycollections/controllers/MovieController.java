@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
+@RestController
+@RequestMapping("/movies")
 public class MovieController {
     private List<Movie> movies = new ArrayList<>() {{
         add(new Movie("Wicked", "Jon M. Chu", 2024, 160));
